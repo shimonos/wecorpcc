@@ -1,0 +1,131 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #050507;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-shell {
+  position: relative;
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  background: #000;
+  overflow: hidden;
+}
+
+.design-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hotspots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hotspot {
+  position: absolute;
+  display: block;
+  pointer-events: auto;
+}
+
+.hotspot:focus-visible {
+  outline: 3px solid #fff;
+  box-shadow: 0 0 0 5px rgba(229, 45, 45, .8);
+}
+
+/* Header */
+.home        { left: 21.8%; top: 0.8%; width: 4.8%; height: 5.0%; }
+.corp-nav    { left: 26.8%; top: 0.8%; width: 8.7%; height: 5.0%; }
+.raids-nav   { left: 35.6%; top: 0.8%; width: 5.1%; height: 5.0%; }
+.gwd-nav     { left: 40.7%; top: 0.8%; width: 8.3%; height: 5.0%; }
+.reviews-nav { left: 49.0%; top: 0.8%; width: 7.1%; height: 5.0%; }
+.how-nav     { left: 56.1%; top: 0.8%; width: 9.4%; height: 5.0%; }
+.faq-nav     { left: 65.5%; top: 0.8%; width: 4.1%; height: 5.0%; }
+
+.discord-top  { left: 74.7%; top: 1.0%; width: 12.2%; height: 4.8%; }
+.discord-main { left: 3.0%; top: 38.5%; width: 21.0%; height: 5.3%; }
+.prices-main  { left: 25.2%; top: 38.5%; width: 11.0%; height: 5.3%; }
+
+/* Four service cards */
+.corp-card   { left: 6.5%; top: 78.0%; width: 15.0%; height: 4.0%; }
+.raids-card  { left: 26.1%; top: 78.0%; width: 15.3%; height: 4.0%; }
+.gwd-card    { left: 46.8%; top: 78.0%; width: 15.5%; height: 4.0%; }
+.events-card { left: 67.2%; top: 78.0%; width: 14.9%; height: 4.0%; }
+
+.seo-content {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(150, 15, 20, .18), transparent 30rem),
+    #08090d;
+  border-top: 1px solid rgba(229, 45, 45, .45);
+}
+
+.content-wrap {
+  width: min(1120px, calc(100% - 32px));
+  margin: auto;
+  padding: 56px 0 72px;
+}
+
+.seo-content h1 {
+  margin: 0 0 16px;
+  font-size: clamp(34px, 5vw, 56px);
+  text-transform: uppercase;
+}
+
+.seo-content h2 {
+  color: #ff4b43;
+  text-transform: uppercase;
+}
+
+.seo-content p {
+  color: #bbc0cb;
+  line-height: 1.7;
+}
+
+.seo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 34px 0;
+}
+
+.seo-grid article,
+details {
+  padding: 20px;
+  background: #0e1118;
+  border: 1px solid #303541;
+}
+
+details {
+  margin: 12px 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.mobile-discord {
+  display: inline-flex;
+  margin-top: 24px;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #ff3b30, #8c0b13);
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .hotspots { display: none; }
+  .seo-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 580px) {
+  .seo-grid { grid-template-columns: 1fr; }
+}

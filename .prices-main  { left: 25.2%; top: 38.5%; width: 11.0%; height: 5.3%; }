@@ -50,7 +50,7 @@ body {
 
 .discord-top  { left: 74.7%; top: 1.0%; width: 12.2%; height: 4.8%; }
 .discord-main { left: 3.0%; top: 38.5%; width: 21.0%; height: 5.3%; }
-.prices-main  { left: 25.2%; top: 38.5%; width: 11.0%; height: 5.3%; }
+.prices-main { left: 23.5%; top: 36.5%; width: 15%; height: 8%; z-index: 20; }
 
 /* Four service cards */
 .corp-card   { left: 6.5%; top: 78.0%; width: 15.0%; height: 4.0%; }

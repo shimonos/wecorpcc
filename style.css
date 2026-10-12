@@ -55,11 +55,14 @@ a {
   user-select: none;
 }
 
+
 .hotspots {
   position: absolute;
   inset: 0;
+  z-index: 20;
   pointer-events: none;
 }
+
 
 .hotspot {
   position: absolute;

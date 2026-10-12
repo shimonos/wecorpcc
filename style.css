@@ -117,38 +117,41 @@ a {
 
 
 
+
+/* Clickable service buttons aligned with homepage artwork */
+
 .corp-card {
-  left: 11.5%;
-  top: 92.5%;
-  width: 16%;
-  height: 5%;
-  z-index: 100;
+  left: 3.6%;
+  top: 90.0%;
+  width: 17.2%;
+  height: 5.5%;
   background: transparent;
 }
 
-
-
-
 .raids-card {
-  left: 31.0%;
-  top: 47.2%;
-  width: 18.7%;
-  height: 2.8%;
+  left: 27.4%;
+  top: 90.0%;
+  width: 17.2%;
+  height: 5.5%;
+  background: transparent;
 }
 
 .gwd-card {
-  left: 51.7%;
-  top: 47.2%;
-  width: 18.7%;
-  height: 2.8%;
+  left: 51.2%;
+  top: 90.0%;
+  width: 17.2%;
+  height: 5.5%;
+  background: transparent;
 }
 
 .events-card {
-  left: 72.4%;
-  top: 47.2%;
-  width: 18.7%;
-  height: 2.8%;
+  left: 75.0%;
+  top: 90.0%;
+  width: 17.2%;
+  height: 5.5%;
+  background: transparent;
 }
+
 
 /* Real HTML content below the artwork */
 .seo-content {

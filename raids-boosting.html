@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WeCorpCC OSRS Raids boosting prices for Tombs of Amascut, Theatre of Blood and Chambers of Xeric.">
+<title>Raids Boosting Prices | WeCorpCC</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #08080b;
+  color: #f5f5f5;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+header {
+  padding: 22px 16px;
+  background: #111114;
+  border-bottom: 2px solid #c6a15d;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  color: #f2ce78;
+  font-size: clamp(26px, 4vw, 42px);
+}
+nav { margin-top: 12px; }
+nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+}
+nav a:hover { color: #f2ce78; }
+main {
+  max-width: 1050px;
+  margin: 32px auto;
+  padding: 0 18px;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #ddd;
+}
+.raid-tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.raid-tabs button {
+  padding: 12px 24px;
+  background: #1b1b20;
+  color: #fff;
+  border: 1px solid #846733;
+  border-radius: 9px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.raid-tabs button.active,
+.raid-tabs button:hover {
+  background: #b99242;
+  color: #080808;
+}
+.raid-panel {
+  display: none;
+  background: #141417;
+  border: 1px solid #71582d;
+  border-radius: 14px;
+  padding: 26px;
+}
+.raid-panel.active { display: block; }
+.raid-panel h2, .raid-panel h3 { color: #f2ce78; }
+.raid-panel h2 { margin-top: 0; }
+.price-list { padding-left: 22px; }
+.price-list li { margin: 9px 0; }
+label {
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+select {
+  width: 100%;
+  padding: 13px;
+  border-radius: 9px;
+  border: 1px solid #b99242;
+  background: #09090c;
+  color: white;
+  font-size: 16px;
+}
+.selection-price {
+  margin: 14px 0;
+  color: #f2ce78;
+  font-size: 20px;
+  font-weight: 800;
+}
+.order {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 22px;
+  background: #b99242;
+  color: #080808;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 800;
+}
+.order:hover { background: #f2ce78; }
+footer {
+  text-align: center;
+  padding: 28px;
+  color: #aaa;
+}
+@media(max-width:600px) {
+  .raid-panel { padding: 18px; }
+  nav a { display: inline-block; margin: 5px 8px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚔️ WeCorpCC Raids Boosting</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="corp-boosting.html">Corp Prices</a>
+    <a href="gwd-boosting.html">GWD Prices</a>
+  </nav>
+</header>
+
+<main>
+  <div class="intro">
+    <h2>Raids Services &amp; Prices</h2>
+    <p>Select a raid below, then choose the service you need.</p>
+    <p>All prices are in Old School RuneScape GP.</p>
+  </div>
+
+  <div class="raid-tabs">
+    <button type="button" class="active" data-raid="toa">Tombs of Amascut (ToA)</button>
+    <button type="button" data-raid="tob">Theatre of Blood (ToB)</button>
+    <button type="button" data-raid="cox">Chambers of Xeric (CoX)</button>
+  </div>
+
+  <section class="raid-panel active" id="toa">
+    <h2>🏺 Tombs of Amascut • Boost</h2>
+    <h3>ToA Kits</h3>
+    <ul class="price-list">
+      <li>5M / attempt — Thread of Elidinis</li>
+      <li>50M / attempt — Masori Crafting Kit</li>
+      <li>150M / attempt — Fang Kit</li>
+      <li>90M / attempt — Menaphite Ornament Kit</li>
+    </ul>
+    <h3>Pet Transmogs</h3>
+    <ul class="price-list">
+      <li>115M — Ba-Ba / Zebak / Akkha / Warden</li>
+      <li>130M — Kephri</li>
+    </ul>
+    <h3>Carries / Leech</h3>
+    <ul class="price-list">
+      <li>14M / run — 150 Invo</li>
+      <li>19M / run — 300 Invo</li>
+      <li>29M / run — 400 Invo</li>
+    </ul>
+    <h3>Combat Achievements</h3>
+    <p>Ask our staff for available ToA Combat Achievement services and prices.</p>
+    <label for="toa-service">Choose your ToA service</label>
+    <select id="toa-service">
+      <option value="">Select a service</option>
+      <option value="5M / attempt">Thread of Elidinis — 5M / attempt</option>
+      <option value="50M / attempt">Masori Crafting Kit — 50M / attempt</option>
+      <option value="150M / attempt">Fang Kit — 150M / attempt</option>
+      <option value="90M / attempt">Menaphite Ornament Kit — 90M / attempt</option>
+      <option value="115M">Ba-Ba / Zebak / Akkha / Warden Transmog — 115M</option>
+      <option value="130M">Kephri Transmog — 130M</option>
+      <option value="14M / run">150 Invo Carry — 14M / run</option>
+      <option value="19M / run">300 Invo Carry — 19M / run</option>
+      <option value="29M / run">400 Invo Carry — 29M / run</option>
+      <option value="Ask staff">ToA Combat Achievements — Ask staff</option>
+    </select>
+    <div class="selection-price" id="toa-price" aria-live="polite"></div>
+    <a class="order" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener">Order ToA Service on Discord</a>
+  </section>
+
+  <section class="raid-panel" id="tob">
+    <h2>🩸 Theatre of Blood • Boost</h2>
+    <h3>KC Services</h3>
+    <ul class="price-list">
+      <li>15M / KC — Entry Mode</li>
+      <li>25M / KC — Standard ToB</li>
+      <li>50M / KC — Hard Mode ToB</li>
+    </ul>
+    <h3>Combat Achievements / Speedruns</h3>
+    <p>Ask our staff for available ToB CA, Perfect, regular and Hard Mode speed services.</p>
+    <label for="tob-service">Choose your ToB service</label>
+    <select id="tob-service">
+      <option value="">Select a service</option>
+      <option value="15M / KC">Entry Mode — 15M / KC</option>
+      <option value="25M / KC">Standard ToB — 25M / KC</option>
+      <option value="50M / KC">Hard Mode ToB — 50M / KC</option>
+      <option value="Ask staff">Combat Achievements / Speedruns — Ask staff</option>
+    </select>
+    <div class="selection-price" id="tob-price" aria-live="polite"></div>
+    <a class="order" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener">Order ToB Service on Discord</a>
+  </section>
+
+  <section class="raid-panel" id="cox">
+    <h2>🏰 Chambers of Xeric • Boost / Leech</h2>
+    <h3>KC Leech — Booster split loot / Client FFA</h3>
+    <ul class="price-list">
+      <li>8M — Normal Mode KC Leech</li>
+      <li>18M — CM KC Leech</li>
+    </ul>
+    <h3>Full Leech CA Bundles</h3>
+    <ul class="price-list">
+      <li>75M — 49 CA Points</li>
+      <li>115M — 0 Experience Full Leech CA Bundle — 65 CA Points</li>
+    </ul>
+    <h3>CA / Speed Services</h3>
+    <ul class="price-list">
+      <li>50M — Trio CoX Speedrunner</li>
+      <li>110M — Trio CoX Speedrunner Leech</li>
+      <li>90M — Five-Man CoX Speedrunner</li>
+      <li>150M — Five-Man CoX Speedrunner Leech</li>
+      <li>80M — Trio CoX: CM Speedrunner</li>
+      <li>80M — Trio CoX: CM Speedchaser Leech (Master)</li>
+      <li>130M — Five-Man CoX: CM Speedrunner</li>
+      <li>200M — Five-Man CoX: CM Speedrunner Leech</li>
+      <li>40M — Immortal Raid Team</li>
+    </ul>
+    <label for="cox-service">Choose your CoX service</label>
+    <select id="cox-service">
+      <option value="">Select a service</option>
+      <option value="8M">Normal Mode KC Leech — 8M</option>
+      <option value="18M">CM KC Leech — 18M</option>
+      <option value="75M">49 CA Points Bundle — 75M</option>
+      <option value="115M">65 CA Points Bundle — 115M</option>
+      <option value="50M">Trio CoX Speedrunner — 50M</option>
+      <option value="110M">Trio CoX Speedrunner Leech — 110M</option>
+      <option value="90M">Five-Man CoX Speedrunner — 90M</option>
+      <option value="150M">Five-Man CoX Speedrunner Leech — 150M</option>
+      <option value="80M">Trio CoX CM Speedrunner — 80M</option>
+      <option value="80M">Trio CoX CM Speedchaser Leech — 80M</option>
+      <option value="130M">Five-Man CoX CM Speedrunner — 130M</option>
+      <option value="200M">Five-Man CoX CM Speedrunner Leech — 200M</option>
+      <option value="40M">Immortal Raid Team — 40M</option>
+    </select>
+    <div class="selection-price" id="cox-price" aria-live="polite"></div>
+    <a class="order" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener">Order CoX Service on Discord</a>
+  </section>
+</main>
+
+<footer>WeCorpCC • Boost Together. Grow Together.</footer>
+
+<script>
+document.querySelectorAll(".raid-tabs button").forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".raid-tabs button").forEach(b => {
+      b.classList.remove("active");
+    });
+    document.querySelectorAll(".raid-panel").forEach(panel => {
+      panel.classList.remove("active");
+    });
+    button.classList.add("active");
+    document.getElementById(button.dataset.raid).classList.add("active");
+  });
+});
+
+["toa", "tob", "cox"].forEach(raid => {
+  const select = document.getElementById(raid + "-service");
+  const price = document.getElementById(raid + "-price");
+  select.addEventListener("change", () => {
+    price.textContent = select.value ? "Price: " + select.value : "";
+  });
+});
+</script>
+</body>
+</html>

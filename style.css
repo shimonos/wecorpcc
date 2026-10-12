@@ -115,14 +115,15 @@ a {
 }
 
 
+
 .corp-card {
-  left: 10.3%;
-  top: 47.2%;
-  width: 18.7%;
-  height: 2.8%;
-  background: rgba(255, 0, 0, 0.35);
+  left: 11.5%;
+  top: 92.5%;
+  width: 16%;
+  height: 3.5%;
   z-index: 100;
 }
+
 
 
 .raids-card {

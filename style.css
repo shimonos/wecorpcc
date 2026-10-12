@@ -121,37 +121,109 @@ a {
 
 /* Clickable service buttons aligned with homepage artwork */
 
+
+/* Homepage clickable areas — measured from 1402 x 1122 artwork */
+
+/* Top navigation */
+.home {
+  left: 25.6%;
+  top: 2.2%;
+  width: 4%;
+  height: 3%;
+}
+
+.corp-nav {
+  left: 30.8%;
+  top: 2.2%;
+  width: 9.5%;
+  height: 3%;
+}
+
+.raids-nav {
+  left: 41.5%;
+  top: 2.2%;
+  width: 4.5%;
+  height: 3%;
+}
+
+.gwd-nav {
+  left: 47.2%;
+  top: 2.2%;
+  width: 8.7%;
+  height: 3%;
+}
+
+.reviews-nav {
+  left: 57%;
+  top: 2.2%;
+  width: 5.7%;
+  height: 3%;
+}
+
+.how-nav {
+  left: 64.3%;
+  top: 2.2%;
+  width: 8.7%;
+  height: 3%;
+}
+
+.faq-nav {
+  left: 74.1%;
+  top: 2.2%;
+  width: 3.5%;
+  height: 3%;
+}
+
+/* Discord buttons */
+.discord-top {
+  left: 82.1%;
+  top: 1.8%;
+  width: 14.2%;
+  height: 4.2%;
+}
+
+.discord-main {
+  left: 3.5%;
+  top: 38.6%;
+  width: 23.7%;
+  height: 4.7%;
+}
+
+/* Main VIEW PRICES button */
+.prices-main {
+  left: 28.6%;
+  top: 38.6%;
+  width: 12.2%;
+  height: 4.7%;
+}
+
+/* Four service cards */
 .corp-card {
-  left: 3.6%;
-  top: 76%;
-  width: 17.2%;
-  height: 5%;
-  z-index: 100;
-  background: transparent;
+  left: 7.1%;
+  top: 75.7%;
+  width: 16.2%;
+  height: 3.4%;
 }
 
 .raids-card {
-  left: 27.4%;
-  top: 90.0%;
-  width: 17.2%;
-  height: 5.5%;
-  background: transparent;
+  left: 29.5%;
+  top: 75.7%;
+  width: 16.3%;
+  height: 3.4%;
 }
 
 .gwd-card {
-  left: 51.2%;
-  top: 90.0%;
-  width: 17.2%;
-  height: 5.5%;
-  background: transparent;
+  left: 52.2%;
+  top: 75.7%;
+  width: 16.3%;
+  height: 3.4%;
 }
 
 .events-card {
-  left: 75.0%;
-  top: 90.0%;
-  width: 17.2%;
-  height: 5.5%;
-  background: transparent;
+  left: 74.5%;
+  top: 75.7%;
+  width: 16.3%;
+  height: 3.4%;
 }
 
 

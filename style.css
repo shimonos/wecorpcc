@@ -425,7 +425,7 @@ details p {
 
 .live-stats-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -465,4 +465,22 @@ details p {
   .live-stats {
     padding: 32px 14px;
   }
+}
+
+/* OSRS sigil icons in live statistics */
+.sigil-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin: 0 auto 12px;
+}
+
+/* Small achievement heading above live statistics */
+.stats-achievement {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e6c477;
+  margin: 0 0 10px;
+  letter-spacing: 0.5px;
 }

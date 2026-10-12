@@ -17,7 +17,6 @@ async function updateLiveStats() {
       spectral: "stat-spectral",
       arcane: "stat-arcane",
       elysian: "stat-elysian",
-      pet: "stat-pet",
       totalSigils: "stat-total"
     };
 

@@ -108,10 +108,11 @@ a {
 }
 
 .prices-main {
-  left: 50.3%;
-  top: 22.1%;
-  width: 14.2%;
-  height: 3.2%;
+  left: 29.1%;
+  top: 52.4%;
+  width: 12.5%;
+  height: 6.5%;
+  z-index: 100;
 }
 
 

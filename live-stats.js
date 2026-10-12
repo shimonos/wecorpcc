@@ -31,6 +31,15 @@ async function updateLiveStats() {
         value.toLocaleString("en-US");
     }
 
+    // Update both live Corp Pet counters on the homepage.
+    if (!Number.isSafeInteger(stats.pet) || stats.pet < 0) {
+      throw new Error("Invalid statistic: pet");
+    }
+
+    document.querySelectorAll(".live-pet-count").forEach((element) => {
+      element.textContent = stats.pet.toLocaleString("en-US");
+    });
+
     const updated = new Date(stats.updatedAt);
 
     status.textContent = Number.isNaN(updated.getTime())

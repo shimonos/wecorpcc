@@ -1,306 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="WeCorpCC — OSRS Corporeal Beast boosting clan, raids, GWD services, reviews and community events.">
+  <meta name="keywords" content="OSRS corp boost, Corporeal Beast boosting, WeCorpCC, OSRS raids services, GWD services">
   <meta name="theme-color" content="#050507">
   <title>WeCorpCC | Corporeal Beast Boosting Clan</title>
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: #050507;
-      color: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
-    .wc-header {
-      background: #09090b;
-      border-bottom: 1px solid #631515;
-    }
-    .wc-nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 16px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-    }
-    .wc-brand {
-      font-size: 25px;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-    }
-    .wc-brand span { color: #ed2222; }
-    .wc-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
-    }
-    .wc-links a {
-      color: #eee;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: bold;
-    }
-    .wc-links a:hover { color: #ff4545; }
-    .wc-button {
-      display: inline-block;
-      background: #a40d0d;
-      color: white !important;
-      padding: 14px 22px;
-      border: 1px solid #ed3030;
-      border-radius: 7px;
-      font-weight: bold;
-      text-decoration: none;
-      text-align: center;
-    }
-    .wc-button:hover { background: #d51b1b; }
-    .wc-button-outline {
-      background: transparent;
-    }
-    .wc-hero {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 26px 20px 45px;
-      text-align: center;
-    }
-    .wc-banner {
-      display: block;
-      width: 100%;
-      max-width: 900px;
-      height: 260px;
-      object-fit: cover;
-      object-position: center;
-      margin: 0 auto 30px;
-      border-radius: 12px;
-      border: 1px solid #591414;
-    }
-    .wc-hero h1 {
-      font-size: clamp(30px, 5vw, 58px);
-      line-height: 1.12;
-      margin: 15px 0;
-      text-transform: uppercase;
-    }
-    .wc-hero h1 span { color: #f12626; }
-    .wc-hero p {
-      max-width: 680px;
-      margin: 0 auto 24px;
-      color: #c6c6ca;
-      line-height: 1.7;
-    }
-    .wc-actions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-    .wc-features {
-      max-width: 1100px;
-      margin: 0 auto 45px;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    .wc-feature {
-      padding: 19px 12px;
-      background: #111114;
-      border: 1px solid #541616;
-      border-radius: 9px;
-      text-align: center;
-      font-size: 13px;
-      font-weight: bold;
-    }
-    .wc-services {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 25px 20px 50px;
-    }
-    .wc-services h2, .wc-info h2 {
-      text-align: center;
-      font-size: 29px;
-      margin-bottom: 25px;
-    }
-    .wc-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-    .wc-card {
-      background: #101013;
-      border: 1px solid #632020;
-      border-radius: 12px;
-      padding: 25px 18px;
-      text-align: center;
-    }
-    .wc-card h3 { color: #ff4242; }
-    .wc-card p {
-      color: #c7c7cb;
-      line-height: 1.6;
-      min-height: 90px;
-    }
-    .wc-card a {
-      display: inline-block;
-      padding: 11px 16px;
-      border: 1px solid #c72525;
-      border-radius: 6px;
-      color: #fff;
-      text-decoration: none;
-    }
-    .wc-card a:hover { background: #a40d0d; }
-    .wc-info {
-      max-width: 900px;
-      margin: auto;
-      padding: 25px 20px;
-      line-height: 1.7;
-      color: #d0d0d4;
-    }
-    .wc-info section { margin-bottom: 40px; }
-    .wc-info details {
-      background: #111114;
-      border: 1px solid #492020;
-      border-radius: 7px;
-      padding: 15px;
-      margin: 10px 0;
-    }
-    .wc-info summary { cursor: pointer; }
-    .wc-footer {
-      text-align: center;
-      padding: 28px 15px;
-      border-top: 1px solid #442020;
-      color: #aaa;
-    }
-    @media (max-width: 800px) {
-      .wc-features, .wc-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .wc-banner { height: 200px; }
-      .wc-nav { justify-content: center; }
-      .wc-links { justify-content: center; }
-    }
-    @media (max-width: 480px) {
-      .wc-features, .wc-grid {
-        grid-template-columns: 1fr;
-      }
-      .wc-banner { height: 150px; }
-      .wc-hero { padding-top: 18px; }
-      .wc-card p { min-height: 0; }
-    }
-  </style>
 </head>
 <body>
-
-<header class="wc-header">
-  <nav class="wc-nav" aria-label="Main navigation">
-    <a class="wc-brand" href="#home">WECORP<span>CC</span></a>
-    <div class="wc-links">
-      <a href="#home">HOME</a>
-      <a href="corp-boosting.html">CORP BOOSTING</a>
-      <a href="raids-boosting.html">RAIDS</a>
-      <a href="gwd-boosting.html">GWD SERVICES</a>
-      <a href="#reviews">REVIEWS</a>
-      <a href="#how">HOW IT WORKS</a>
-      <a href="#faq">FAQ</a>
-    </div>
-    <a class="wc-button" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener noreferrer">JOIN DISCORD</a>
-  </nav>
-</header>
-
-<main id="home">
-  <section class="wc-hero">
-    <img
-      class="wc-banner"
-      src="assets/WECORPCC%20Infernal%20Beast%20Banner.png"
-      alt="WeCorpCC Infernal Beast Banner"
-    >
-
-    <h1>The #1 OSRS <span>Corporeal Beast Boosting Clan</span></h1>
-    <p>
-      Join WeCorpCC for Corporeal Beast boosting, raids,
-      God Wars Dungeon services and organised PvM events.
-      Boost Together. Grow Together.
-    </p>
-
-    <div class="wc-actions">
-      <a class="wc-button" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener noreferrer">JOIN WECORPCC DISCORD</a>
-      <a class="wc-button wc-button-outline" href="corp-boosting.html">VIEW PRICES</a>
-    </div>
-  </section>
-
-  <section class="wc-features" aria-label="Community highlights">
-    <div class="wc-feature">🛡️ SAFE &amp; TOS FRIENDLY</div>
-    <div class="wc-feature">🤝 TRUSTED LEADERSHIP</div>
-    <div class="wc-feature">⚡ FAST &amp; EFFICIENT</div>
-    <div class="wc-feature">🏆 COMMUNITY EVENTS</div>
-  </section>
-
-  <section class="wc-services" id="services">
-    <h2>Our Services</h2>
-    <div class="wc-grid">
-      <article class="wc-card">
-        <h3>Corp Boosting</h3>
-        <p>Explore our Corporeal Beast boosting packages and prices.</p>
-        <a href="corp-boosting.html">VIEW CORP PRICES</a>
-      </article>
-      <article class="wc-card">
-        <h3>Raids</h3>
-        <p>Chambers of Xeric, Theatre of Blood and Tombs of Amascut.</p>
-        <a href="raids-boosting.html">VIEW RAID PRICES</a>
-      </article>
-      <article class="wc-card">
-        <h3>GWD Services</h3>
-        <p>God Wars Dungeon PvM services and group activities.</p>
-        <a href="gwd-boosting.html">VIEW GWD PRICES</a>
-      </article>
-      <article class="wc-card">
-        <h3>Events &amp; Masses</h3>
-        <p>Join our WeCorpCC community events and Corp masses.</p>
-        <a href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener noreferrer">JOIN EVENTS</a>
-      </article>
+  <main class="site-shell">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1402 1122" style="display:block;width:100%;height:auto" aria-label="WeCorpCC homepage navigation">
+      <image href="assets/wecorpcc-homepage.png" x="0" y="0" width="1402" height="1122" preserveAspectRatio="none" />
+      <!-- Top navigation -->
+      <a href="#home" aria-label="Home"><rect x="359" y="25" width="56" height="34" fill="transparent" pointer-events="all"/></a>
+      <a href="corp-boosting.html" aria-label="Corp Boosting"><rect x="432" y="25" width="133" height="34" fill="transparent" pointer-events="all"/></a>
+      <a href="raids-boosting.html" aria-label="Raids"><rect x="582" y="25" width="63" height="34" fill="transparent" pointer-events="all"/></a>
+      <a href="gwd-boosting.html" aria-label="GWD Services"><rect x="662" y="25" width="122" height="34" fill="transparent" pointer-events="all"/></a>
+      <a href="#reviews" aria-label="Reviews"><rect x="799" y="25" width="80" height="34" fill="transparent" pointer-events="all"/></a>
+      <a href="#how" aria-label="How It Works"><rect x="902" y="25" width="122" height="34" fill="transparent" pointer-events="all"/></a>
+      <a href="#faq" aria-label="FAQ"><rect x="1039" y="25" width="49" height="34" fill="transparent" pointer-events="all"/></a>
+      <!-- Discord buttons -->
+      <a href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener" aria-label="Join Discord"><rect x="1151" y="20" width="199" height="48" fill="transparent" pointer-events="all"/></a>
+      <a href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener" aria-label="Join WeCorpCC Discord"><rect x="49" y="433" width="332" height="53" fill="transparent" pointer-events="all"/></a>
+      <!-- Main VIEW PRICES button -->
+      <a href="corp-boosting.html" aria-label="View Prices"><rect x="401" y="433" width="171" height="53" fill="transparent" pointer-events="all"/></a>
+      <!-- Four service buttons -->
+      <a href="corp-boosting.html" aria-label="View Corp Prices"><rect x="100" y="849" width="227" height="39" fill="transparent" pointer-events="all"/></a>
+      <a href="raids-boosting.html" aria-label="View Raid Prices"><rect x="414" y="849" width="228" height="39" fill="transparent" pointer-events="all"/></a>
+      <a href="gwd-boosting.html" aria-label="View GWD Prices"><rect x="732" y="849" width="228" height="39" fill="transparent" pointer-events="all"/></a>
+      <a href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener" aria-label="Join Our Events"><rect x="1045" y="849" width="228" height="39" fill="transparent" pointer-events="all"/></a>
+    </svg>
+  </main>
+  <section class="seo-content" id="home">
+    <div class="content-wrap">
+      <h1>WeCorpCC — OSRS Corporeal Beast Boosting Clan</h1>
+      <p>WeCorpCC is an Old School RuneScape community focused on Corporeal Beast boosting, raids, God Wars Dungeon services and organised PvM events.</p>
+      <div class="seo-grid">
+        <article id="corp-boosting"><h2>OSRS Corp Boosting</h2><p>Join our official Discord to ask about Corporeal Beast boosting availability, packages and pricing.</p><a class="service-discord" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener">Open Corp Boosting Ticket</a></article>
+        <article id="raids"><h2>Raids Services</h2><p>Community support for Theatre of Blood, Chambers of Xeric and Tombs of Amascut.</p><a class="service-discord" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener">Open Raids Ticket</a></article>
+        <article id="gwd"><h2>GWD Services</h2><p>God Wars Dungeon activities, masses and organised community events.</p><a class="service-discord" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener">Open GWD Ticket</a></article>
+        <article><h2>Events &amp; Masses</h2><p>Join regular Corp masses and special WeCorpCC community events.</p><a class="service-discord" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener">Join Events in Discord</a></article>
+      </div>
+      <section id="reviews"><h2>Customer Reviews</h2><p>Verified customer feedback will be added before launch.</p></section>
+      <section id="how"><h2>How It Works</h2><p>Join Discord, open the correct ticket, speak with the team and confirm the service before starting.</p></section>
+      <section id="faq"><h2>Frequently Asked Questions</h2><details><summary>How do I contact WeCorpCC?</summary><p>Use the official Discord invite on this page.</p></details><details><summary>Can I order through the website?</summary><p>The first version directs customers to Discord for tickets and communication.</p></details></section>
+      <a class="mobile-discord" href="https://discord.gg/HXAknJguVH" target="_blank" rel="noopener">Join WeCorpCC Discord</a>
     </div>
   </section>
-
-  <div class="wc-info">
-    <section id="reviews">
-      <h2>Customer Reviews</h2>
-      <p>Customer feedback and reviews will be displayed here.</p>
-    </section>
-
-    <section id="how">
-      <h2>How It Works</h2>
-      <p>Join our Discord, open the appropriate service ticket, speak with the team, and confirm your order before starting.</p>
-    </section>
-
-    <section id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <details>
-        <summary>How do I contact WeCorpCC?</summary>
-        <p>Join our official Discord using the buttons on this page.</p>
-      </details>
-      <details>
-        <summary>Where can I see prices?</summary>
-        <p>Use the Corp Boosting, Raids or GWD Services pages.</p>
-      </details>
-      <details>
-        <summary>How do I place an order?</summary>
-        <p>Open a service ticket in our Discord server.</p>
-      </details>
-    </section>
-  </div>
-</main>
-
-<footer class="wc-footer">
-  WeCorpCC • Boost Together. Grow Together.
-</footer>
-
 </body>
 </html>

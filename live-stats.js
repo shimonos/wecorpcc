@@ -17,7 +17,7 @@ async function updateLiveStats() {
       spectral: "stat-spectral",
       arcane: "stat-arcane",
       elysian: "stat-elysian",
-      totalSigils: "stat-total"
+      totalSigils: "stat-total-heading"
     };
 
     for (const [key, id] of Object.entries(fields)) {
@@ -31,6 +31,18 @@ async function updateLiveStats() {
         value.toLocaleString("en-US");
     }
 
+    // Update the live Discord member count.
+    if (
+      !Number.isSafeInteger(stats.discordMembers) ||
+      stats.discordMembers < 0
+    ) {
+      throw new Error("Invalid statistic: discordMembers");
+    }
+
+    document.querySelectorAll(".live-discord-count").forEach((element) => {
+      element.textContent = stats.discordMembers.toLocaleString("en-US");
+    });
+
     // Update both live Corp Pet counters on the homepage.
     if (!Number.isSafeInteger(stats.pet) || stats.pet < 0) {
       throw new Error("Invalid statistic: pet");
@@ -39,6 +51,12 @@ async function updateLiveStats() {
     document.querySelectorAll(".live-pet-count").forEach((element) => {
       element.textContent = stats.pet.toLocaleString("en-US");
     });
+
+    // Keep the heading above the sigils synchronized.
+    const totalHeading = document.getElementById("stat-total-heading");
+    if (totalHeading) {
+      totalHeading.textContent = stats.totalSigils.toLocaleString("en-US");
+    }
 
     const updated = new Date(stats.updatedAt);
 
